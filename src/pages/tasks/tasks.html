@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>Agenda</ion-title>
+    <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+
+  <ion-toolbar>
+    <ion-segment>
+      <ion-segment-button value="open">
+        Pendentes
+      </ion-segment-button>
+      <ion-segment-button value="done">
+        Realizados
+      </ion-segment-button>
+      <ion-segment-button value="all">
+        Todos
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-list>
+    <ion-item-sliding *ngFor="let task of tasks">
+      <ion-item>
+        <h2>{{task.cliente}}</h2>
+        <span item-right>{{task.date | date: 'dd HH:mm'}}</span>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="primary">
+          <ion-icon name="create"></ion-icon>
+          Editar
+        </button>
+        <button ion-button color="secondary">
+          <ion-icon name="checkmark-circle"></ion-icon>
+          Finalizar
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>

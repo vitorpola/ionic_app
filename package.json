@@ -1,7 +1,7 @@
 {
-  "name": "ionic-hello-world",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "name": "manicure-app",
+  "author": "Vitor Pola",
+  "homepage": "http://vitorpola.com/",
   "private": true,
   "scripts": {
     "ionic:build": "ionic-app-scripts build",
@@ -37,5 +37,5 @@
     "ionic-plugin-keyboard"
   ],
   "cordovaPlatforms": [],
-  "description": "myApp: An Ionic project"
+  "description": "aplicativo de gerenciamento de atendimentos de uma manicure"
 }

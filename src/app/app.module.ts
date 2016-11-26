@@ -2,7 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { Storage } from '@ionic/storage';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { AboutPage } from '../pages/about/about';
+import { TasksPage } from '../pages/tasks/tasks';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { PricesPage } from '../pages/prices/prices';
@@ -11,7 +11,7 @@ import { NewItemModal } from '../pages/prices/new';
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
+    TasksPage,
     ContactPage,
     HomePage,
     PricesPage,   
@@ -23,7 +23,7 @@ import { NewItemModal } from '../pages/prices/new';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
+    TasksPage,
     ContactPage,
     HomePage,
     PricesPage,

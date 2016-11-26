@@ -1,3 +1,20 @@
 page-home {
+    ion-card{
+        background-color:#fff!important;
+        ion-card-header{
+            text-align: center;
+            font-weight: 600;
+            border-bottom: 1px solid #ccc;
+            background-color: #B4649C;
+            color: #fff!important;
+        }
+        ion-list{
+            background-color:#fff!important;
+            ion-item{
+                background-color:#fff!important;
+                border-color: #ccc;
+            }
+        }
+    }
 
 }

@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar color="secondary">
-    <ion-title>Home</ion-title>
+    <ion-title>ManicureApp</ion-title>
     <button ion-button menuToggle>
           <ion-icon name="menu"></ion-icon>
     </button>
@@ -9,12 +9,27 @@
 
 <ion-content padding>
 
-  <ion-card>
+  <ion-card >
     <ion-card-header>
-      Header
+      Próximos Atendimentos
+     
     </ion-card-header>
-    <ion-card-content>
-      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
-    </ion-card-content>
+      <ion-list inset>
+            <ion-item *ngFor="let task of tasks">
+              {{task.cliente}}
+              <span item-right>{{task.date | date: 'dd HH:mm'}}</span>
+        </ion-item>
+      </ion-list>
+       <button ion-button full small item-right icon-left color="light">
+          Ver Todos
+        </button>
   </ion-card>
+
+  <ion-fab right bottom>
+    <button ion-fab color="secondary"><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab color="primary"><ion-icon name="person" color="primary"></ion-icon></button>
+      <button ion-fab color="primary"><ion-icon name="calendar" color="primary"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
 </ion-content>
