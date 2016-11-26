@@ -5,17 +5,18 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
+   <form role="form" (ngSubmit)="submit(form.value)">
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>Nome item</ion-label>
+        <ion-input type="text" value="" ng-control="name"></ion-input>
+      </ion-item>
 
-    <ion-item>
-      <ion-label fixed>Username</ion-label>
-      <ion-input type="text" value=""></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label fixed>Password</ion-label>
-      <ion-input type="password"></ion-input>
-    </ion-item>
-
-  </ion-list>
+      <ion-item>
+        <ion-label fixed>Valor</ion-label>
+        <ion-input type="text"  ng-control="price"></ion-input>
+      </ion-item>
+       <button ion-button block>Cadastrar</button>
+    </ion-list>
+   </form>
 </ion-content>

@@ -6,10 +6,7 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { PricesPage } from '../pages/prices/prices';
-import { NewItemModal } from '../pages/prices/prices';
-import { TabsPage } from '../pages/tabs/tabs';
-
-
+import { NewItemModal } from '../pages/prices/new';
 
 @NgModule({
   declarations: [
@@ -18,8 +15,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     ContactPage,
     HomePage,
     PricesPage,   
-    NewItemModal, 
-    TabsPage
+    NewItemModal
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -31,8 +27,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     ContactPage,
     HomePage,
     PricesPage,
-    NewItemModal,
-    TabsPage
+    NewItemModal
   ],
   providers: [Storage, {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
